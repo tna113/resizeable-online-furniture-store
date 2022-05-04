@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -7,7 +9,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
+}
+
+h2 {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .container {
@@ -18,15 +27,22 @@ body {
     gap: 4em;
 }
 
+
+/* made up of furniture card & details card */
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.detailsCard {
+    border: 1px solid black;
+}
+
 .card {
     width: 150px;
     height: 150px;
-}
-
-.card h3 {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
 }
 
 .r {

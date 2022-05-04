@@ -2,10 +2,15 @@ $(function() {
     $(".r").resizable({
         containment: '.card'
     });
+
+    init();
 });
 
 //array of furniture items
 furnitureCaption = ['chair', 'plant', 'table'];
+
+//array of furniture details
+furnitureDetails = ['', '', ''];
 
 //dynamically create furniture cards on load
 function init() {
@@ -20,6 +25,9 @@ function init() {
 
         var cardDetail = document.createElement('div');
         cardDetail.className = "ui-state-active r";
+        $(cardDetail).resizable({
+            containment: card
+        });
 
         //set the background image based on picture url  array
         cardDetail.style.backgroundImage = "URL(./img/" + cap + ".png)";
